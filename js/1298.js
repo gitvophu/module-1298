@@ -10,7 +10,7 @@ $(document).ready(function () {
         $(this).next('.select-options').toggle(0)
         $(this).css('color', '#fff')
         $(this).prev('.label').css('color', '#fff')
-
+        loadDataSelect1();
         event.stopPropagation();
     });
     $('.option-item').click(function () {
@@ -39,7 +39,17 @@ $(document).ready(function () {
     $('.search-btn').click(function () {
         $('#search-form').submit();
     });
+    $('.search-option').click(function (event) {
+        event.stopPropagation();
+    });
+    $('.search-option').keydown(function () {
+        setTimeout(function (selector) {
+            // console.log(selector.val());
+            var keyword = selector.val();
+            loadDataSelect1_OnSearch(keyword);
+        },100,$(this));
 
+    });
 
 });
 
@@ -68,7 +78,37 @@ function loadDataSelect1() {
             });
     });
 
-    $('#select-custom-1').find('.select-options').empty();
+    // $('#select-custom-1').find('.select-options').empty();
+    $('#select-custom-1').find('.select-options').find('.option-item').each(function () {
+
+        console.log($(this));
+        $(this).remove();
+    });
+    data.map((item, index) => {
+        $('#select-custom-1').find('.select-options')
+            .append(`<div class="option-item">${item.text}<span>${item.value}</span></div>`);
+    })
+    ;
+}
+function loadDataSelect1_OnSearch(keyword) {
+    var data = [];
+    var options = $('#select-1').children().each(function (index) {
+        var value = $(this).attr('value');
+        var text = $(this).text();
+        if(text.toLowerCase().includes(keyword.toLowerCase()))
+        data.push(
+            {
+                'value': value,
+                'text': text
+            });
+    });
+
+    // $('#select-custom-1').find('.select-options').empty();
+    $('#select-custom-1').find('.select-options').find('.option-item').each(function () {
+
+        console.log($(this));
+        $(this).remove();
+    });
     data.map((item, index) => {
         $('#select-custom-1').find('.select-options')
             .append(`<div class="option-item">${item.text}<span>${item.value}</span></div>`);

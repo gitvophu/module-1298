@@ -25,6 +25,7 @@ $url_path = str_replace('\\', '/', $url_path);
                         <div class="label" >Thanh Pho</div>
                         <div class="selected-item">selected</div>
                         <div class="select-options">
+                            <input class="search-option" type="text" width="100%">
                             <div class="option-item">option 1</div>
                             <div class="option-item">option 2</div>
                             <div class="option-item">option 3</div>
