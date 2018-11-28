@@ -6,7 +6,6 @@
 }
 .type-1298 .container form .col-md-9 .col-md-4 {
   border: 1px solid #e3e3e3;
-  border-right: 0px solid #e3e3e3;
   padding: 0;
 }
 .type-1298 .container form .col-md-9 .col-md-4 .form-group {
@@ -31,6 +30,10 @@
 }
 .type-1298 .container form .col-md-9 .col-md-4 .select-custom .select-options {
   display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  background: #1ea69a;
 }
 .type-1298 .container form .col-md-9 .col-md-4 .select-custom .select-options .option-item:hover {
   background: #1A9086;
