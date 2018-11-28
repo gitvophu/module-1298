@@ -1,0 +1,90 @@
+.type-1298 {
+  margin-top: 50px;
+}
+.type-1298 .container form {
+  display: flex;
+}
+.type-1298 .container form .col-md-9 {
+  display: flex;
+  padding: 0;
+  border: 1px solid #e3e3e3;
+}
+.type-1298 .container form .col-md-9 .col-md-4 {
+  border-left: 1px solid #e3e3e3;
+  padding: 0;
+}
+.type-1298 .container form .col-md-9 .col-md-4 .form-group {
+  margin-bottom: 0;
+}
+.type-1298 .container form .col-md-9 .col-md-4 .form-group select {
+  width: 100%;
+  border: none;
+}
+.type-1298 .container form .col-md-3 {
+  padding: 0;
+  display: flex;
+}
+.type-1298 .container form .col-md-3 .col-md-4 {
+  display: flex;
+  padding: 0;
+}
+.type-1298 .container form .col-md-3 .col-md-4 button {
+  width: 100%;
+  background: #18998e;
+  border: none;
+}
+.type-1298 .container form .col-md-3 .col-md-8 {
+  display: flex;
+  padding: 0;
+}
+.type-1298 .container form .col-md-3 .col-md-8 button {
+  width: 100%;
+  background: #1ea69a;
+  border: none;
+}
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+.custom-select select {
+  display: none;
+}
+.select-selected {
+  background-color: #1ea69a;
+}
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+.select-items div,
+.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.select-items {
+  position: absolute;
+  background-color: #1ea69a;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+.select-hide {
+  display: none;
+}
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0,0,0,0.1);
+}
