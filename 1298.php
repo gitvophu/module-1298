@@ -19,7 +19,7 @@
 ?>
 <!DOCTYPE html>
 
-<html>
+<html lang="vi">
     <head>
         <title>module 1298</title>
         <meta charset="UTF-8">

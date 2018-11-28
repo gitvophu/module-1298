@@ -2,14 +2,16 @@
   margin-top: 50px;
   .container {
     form {
-      display: flex;
+      @font-size: 1.5rem;
+      //display: flex;
       .col-md-9 {
-        display: flex;
+        //display: flex;
         padding: 0;
-        border: 1px solid #e3e3e3;
+
         @text-color: #fff;
         .col-md-4 {
-          border-left: 1px solid #e3e3e3;
+          border: 1px solid #e3e3e3;
+          border-right: 0px solid #e3e3e3;
           padding: 0;
           .form-group {
             margin-bottom: 0;
@@ -17,6 +19,7 @@
           }
           .label {
           color: #000;
+            font-size: @font-size;
           }
           .select-hidden {
             display: none;
@@ -27,10 +30,11 @@
               font-family: 'FontAwesome';
               float: right;
             }
-            @item-padding: 15px 5px;
+            @item-padding:25px 10px;
             .selected-item {
               padding: @item-padding;
               cursor: pointer;
+              font-size: @font-size;
             }
             .select-options {
               display: none;
@@ -42,30 +46,48 @@
                 padding: @item-padding 0;
                 color: @text-color;
                 cursor: pointer;
+                font-size: @font-size;
+                span{
+                  display: none;
+                }
               }
             }
           }
         }
       }
       .col-md-3 {
+        @btn-text-color:#fff;
         padding: 0;
-        display: flex;
+        //display: flex;
         .col-md-4 {
-          display: flex;
+          //display: flex;
           padding: 0;
-          button {
+          .advance-btn {
             width: 100%;
             background: #18998e;
             border: none;
+            cursor: pointer;
+            text-align: center;
+            color: @btn-text-color;
+
+          }
+          .advance-btn:hover{
+            background: #179086;
           }
         }
         .col-md-8 {
-          display: flex;
+          //display: flex;
           padding: 0;
-          button {
+          .search-btn {
             width: 100%;
             background: #1ea69a;
             border: none;
+            cursor: pointer;
+            text-align: center;
+            color: @btn-text-color;
+          }
+          .search-btn:hover{
+            background: #1C9D92;
           }
         }
       }

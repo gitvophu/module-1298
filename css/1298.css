@@ -1,16 +1,12 @@
 .type-1298 {
   margin-top: 50px;
 }
-.type-1298 .container form {
-  display: flex;
-}
 .type-1298 .container form .col-md-9 {
-  display: flex;
   padding: 0;
-  border: 1px solid #e3e3e3;
 }
 .type-1298 .container form .col-md-9 .col-md-4 {
-  border-left: 1px solid #e3e3e3;
+  border: 1px solid #e3e3e3;
+  border-right: 0px solid #e3e3e3;
   padding: 0;
 }
 .type-1298 .container form .col-md-9 .col-md-4 .form-group {
@@ -18,6 +14,7 @@
 }
 .type-1298 .container form .col-md-9 .col-md-4 .label {
   color: #000;
+  font-size: 1.5rem;
 }
 .type-1298 .container form .col-md-9 .col-md-4 .select-hidden {
   display: none;
@@ -28,8 +25,9 @@
   float: right;
 }
 .type-1298 .container form .col-md-9 .col-md-4 .select-custom .selected-item {
-  padding: 15px 5px;
+  padding: 25px 10px;
   cursor: pointer;
+  font-size: 1.5rem;
 }
 .type-1298 .container form .col-md-9 .col-md-4 .select-custom .select-options {
   display: none;
@@ -38,29 +36,42 @@
   background: #1A9086;
 }
 .type-1298 .container form .col-md-9 .col-md-4 .select-custom .select-options .option-item {
-  padding: 15px 5px 0;
+  padding: 25px 10px 0;
   color: #fff;
   cursor: pointer;
+  font-size: 1.5rem;
+}
+.type-1298 .container form .col-md-9 .col-md-4 .select-custom .select-options .option-item span {
+  display: none;
 }
 .type-1298 .container form .col-md-3 {
   padding: 0;
-  display: flex;
 }
 .type-1298 .container form .col-md-3 .col-md-4 {
-  display: flex;
   padding: 0;
 }
-.type-1298 .container form .col-md-3 .col-md-4 button {
+.type-1298 .container form .col-md-3 .col-md-4 .advance-btn {
   width: 100%;
   background: #18998e;
   border: none;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+}
+.type-1298 .container form .col-md-3 .col-md-4 .advance-btn:hover {
+  background: #179086;
 }
 .type-1298 .container form .col-md-3 .col-md-8 {
-  display: flex;
   padding: 0;
 }
-.type-1298 .container form .col-md-3 .col-md-8 button {
+.type-1298 .container form .col-md-3 .col-md-8 .search-btn {
   width: 100%;
   background: #1ea69a;
   border: none;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+}
+.type-1298 .container form .col-md-3 .col-md-8 .search-btn:hover {
+  background: #1C9D92;
 }

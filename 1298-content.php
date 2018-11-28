@@ -8,21 +8,67 @@ $url_path = $url_host . $matches[1][0];
 $url_path = str_replace('\\', '/', $url_path);
 ?>
 <div class="type-1298">
+
     <div class="container">
         <form method="get" action="#">
             <div class="col-md-9">
-                <div class="col-md-4" id="select-box-1">
+                <div class="col-md-4 select-box">
                     <div class="form-group" >
 
-                        <label class="label" for="">Main Location</label><br>
-                        <select class="select-hidden" name="" id="">
-                            <option value="">Any</option>
-                            <option value="">Any</option>
-                            <option value="">Any</option>
+
+                        <select class="select-hidden" name="province" id="select-1">
+
+                            <option value="1">HCM</option>
+                            <option value="2">HN</option>
+                            <option value="3">Da Nang</option>
                         </select>
 
                     </div>
-                    <div class="select-custom">
+                    <div class="select-custom" id="select-custom-1">
+                        <div class="label" >Thanh Pho</div>
+                        <div class="selected-item">selected</div>
+                        <div class="select-options">
+
+                            <div class="option-item">option 1</div>
+                            <div class="option-item">option 2</div>
+                            <div class="option-item">option 3</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 select-box" id="select-box-2">
+                    <div class="form-group" >
+
+                        <select class="select-hidden" name="district" id="select-2">
+                            <option value="">Quan 1</option>
+                            <option value="">Quan 2</option>
+                            <option value="">Quan 3</option>
+                        </select>
+
+                    </div>
+                    <div class="select-custom" id="select-custom-2">
+                        <div class="label" >Quan Huyen</div>
+                        <div class="selected-item">selected</div>
+                        <div class="select-options" >
+                            <div class="option-item">option 1</div>
+                            <div class="option-item">option 2</div>
+                            <div class="option-item">option 3</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 select-box" id="select-box-3">
+                    <div class="form-group" >
+
+                        <select class="select-hidden" name="ward" id="select-3">
+                            <option value="">Tan thoi hiep</option>
+                            <option value="">Trung chanh</option>
+                            <option value="">Hiep thanh</option>
+                        </select>
+
+                    </div>
+                    <div class="select-custom" id="select-custom-3">
+                        <div class="label" >Phuong</div>
                         <div class="selected-item">selected</div>
                         <div class="select-options">
                             <div class="option-item">option 1</div>
@@ -32,44 +78,19 @@ $url_path = str_replace('\\', '/', $url_path);
 
                     </div>
                 </div>
-                <div class="col-md-4">
-
-                    <div class="form-group">
-
-                        <label for="">Main Location</label><br>
-                        <select class="select-hidden" name="" id="">
-                            <option value="">Any</option>
-                            <option value="">Any</option>
-                            <option value="">Any</option>
-                        </select>
-                    </div>
-
-                </div>
-                <div class="col-md-4">
-
-                    <div class="form-group">
-
-                        <label for="">Main Location</label>
-                        <select class="select-hidden" name="" id="">
-                            <option value="">Any</option>
-                            <option value="">Any</option>
-                            <option value="">Any</option>
-                        </select>
-                    </div>
-
-                </div>
             </div>
+
             <div class="col-md-3">
                 <div class="col-md-4">
-                    <button>
+                    <div class="advance-btn">
                         <i class="fa fa-search-plus" aria-hidden="true"></i>
-                    </button>
+                    </div>
 
                 </div>
                 <div class="col-md-8">
-                    <button>
+                    <div class="search-btn">
                         <i class="fa fa-search" aria-hidden="true"></i>
-                    </button>
+                    </div>
 
                 </div>
             </div>
