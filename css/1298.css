@@ -16,9 +16,19 @@
 .type-1298 .container form .col-md-9 .col-md-4 .form-group {
   margin-bottom: 0;
 }
-.type-1298 .container form .col-md-9 .col-md-4 .form-group select {
-  width: 100%;
-  border: none;
+.type-1298 .container form .col-md-9 .col-md-4 .select-hidden {
+  display: none;
+}
+.type-1298 .container form .col-md-9 .col-md-4 .select-custom .selected-item::after {
+  content: "\f0d7";
+  font-family: 'FontAwesome';
+  float: right;
+}
+.type-1298 .container form .col-md-9 .col-md-4 .select-custom .selected-item {
+  cursor: pointer;
+}
+.type-1298 .container form .col-md-9 .col-md-4 .select-custom .select-option {
+  position: absolute;
 }
 .type-1298 .container form .col-md-3 {
   padding: 0;
@@ -41,50 +51,4 @@
   width: 100%;
   background: #1ea69a;
   border: none;
-}
-.custom-select {
-  position: relative;
-  font-family: Arial;
-}
-.custom-select select {
-  display: none;
-}
-.select-selected {
-  background-color: #1ea69a;
-}
-.select-selected:after {
-  position: absolute;
-  content: "";
-  top: 14px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent;
-}
-.select-selected.select-arrow-active:after {
-  border-color: transparent transparent #fff transparent;
-  top: 7px;
-}
-.select-items div,
-.select-selected {
-  color: #ffffff;
-  padding: 8px 16px;
-  border: 1px solid transparent;
-  cursor: pointer;
-}
-.select-items {
-  position: absolute;
-  background-color: #1ea69a;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 99;
-}
-.select-hide {
-  display: none;
-}
-.select-items div:hover,
-.same-as-selected {
-  background-color: rgba(0,0,0,0.1);
 }
