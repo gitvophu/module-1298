@@ -11,10 +11,10 @@ $url_path = str_replace('\\', '/', $url_path);
     <div class="container">
         <form method="get" action="#">
             <div class="col-md-9">
-                <div class="col-md-4">
-                    <div class="form-group">
+                <div class="col-md-4" id="select-box-1">
+                    <div class="form-group" >
 
-                        <label for="">Main Location</label><br>
+                        <label class="label" for="">Main Location</label><br>
                         <select class="select-hidden" name="" id="">
                             <option value="">Any</option>
                             <option value="">Any</option>
@@ -23,8 +23,13 @@ $url_path = str_replace('\\', '/', $url_path);
 
                     </div>
                     <div class="select-custom">
-                        <div class="selected-item">aaaa</div>
-                        <div class="select-option">aaaa</div>
+                        <div class="selected-item">selected</div>
+                        <div class="select-options">
+                            <div class="option-item">option 1</div>
+                            <div class="option-item">option 2</div>
+                            <div class="option-item">option 3</div>
+                        </div>
+
                     </div>
                 </div>
                 <div class="col-md-4">

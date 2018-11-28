@@ -7,6 +7,7 @@
         display: flex;
         padding: 0;
         border: 1px solid #e3e3e3;
+        @text-color: #fff;
         .col-md-4 {
           border-left: 1px solid #e3e3e3;
           padding: 0;
@@ -14,40 +15,54 @@
             margin-bottom: 0;
 
           }
-          .select-hidden{
+          .label {
+          color: #000;
+          }
+          .select-hidden {
             display: none;
           }
-          .select-custom{
-            .selected-item::after{
+          .select-custom {
+            .selected-item::after {
               content: "\f0d7";
               font-family: 'FontAwesome';
               float: right;
             }
-            .selected-item{
+            @item-padding: 15px 5px;
+            .selected-item {
+              padding: @item-padding;
               cursor: pointer;
             }
-            .select-option{
-              position: absolute;
+            .select-options {
+              display: none;
+              .option-item:hover {
+                background: #1A9086;
+
+              }
+              .option-item {
+                padding: @item-padding 0;
+                color: @text-color;
+                cursor: pointer;
+              }
             }
           }
         }
       }
-      .col-md-3{
+      .col-md-3 {
         padding: 0;
         display: flex;
-        .col-md-4{
+        .col-md-4 {
           display: flex;
           padding: 0;
-          button{
+          button {
             width: 100%;
             background: #18998e;
             border: none;
           }
         }
-        .col-md-8{
+        .col-md-8 {
           display: flex;
           padding: 0;
-          button{
+          button {
             width: 100%;
             background: #1ea69a;
             border: none;
