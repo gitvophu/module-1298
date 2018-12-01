@@ -75,6 +75,200 @@ $url_path = str_replace('\\', '/', $url_path);
 
                     </div>
                 </div>
+                <div class="col-md-12 advance-box">
+                    <div class="wrapper">
+                        <div class="col-md-3 select-box" id="select-box-3">
+                            <div class="form-group" >
+
+                                <select class="select-hidden" name="ward" id="select-3">
+                                    <option value="1">Tan thoi hiep</option>
+                                    <option value="2">Trung chanh</option>
+                                    <option value="3">Hiep thanh</option>
+                                </select>
+
+                            </div>
+                            <div class="select-custom" id="select-custom-3">
+                                <div class="label" >Phuong</div>
+                                <div class="selected-item">selected</div>
+                                <div class="select-options">
+                                    <div class="option-item">option 1</div>
+                                    <div class="option-item">option 2</div>
+                                    <div class="option-item">option 3</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 select-box" id="select-box-3">
+                            <div class="form-group" >
+
+                                <select class="select-hidden" name="ward" id="select-3">
+                                    <option value="1">Tan thoi hiep</option>
+                                    <option value="2">Trung chanh</option>
+                                    <option value="3">Hiep thanh</option>
+                                </select>
+
+                            </div>
+                            <div class="select-custom" id="select-custom-3">
+                                <div class="label" >Phuong</div>
+                                <div class="selected-item">selected</div>
+                                <div class="select-options">
+                                    <div class="option-item">option 1</div>
+                                    <div class="option-item">option 2</div>
+                                    <div class="option-item">option 3</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 select-box" id="select-box-3">
+                            <div class="form-group" >
+
+                                <select class="select-hidden" name="ward" id="select-3">
+                                    <option value="1">Tan thoi hiep</option>
+                                    <option value="2">Trung chanh</option>
+                                    <option value="3">Hiep thanh</option>
+                                </select>
+
+                            </div>
+                            <div class="select-custom" id="select-custom-3">
+                                <div class="label" >Phuong</div>
+                                <div class="selected-item">selected</div>
+                                <div class="select-options">
+                                    <div class="option-item">option 1</div>
+                                    <div class="option-item">option 2</div>
+                                    <div class="option-item">option 3</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 select-box" id="select-box-3">
+                            <div class="form-group" >
+
+                                <select class="select-hidden" name="ward" id="select-3">
+                                    <option value="1">Tan thoi hiep</option>
+                                    <option value="2">Trung chanh</option>
+                                    <option value="3">Hiep thanh</option>
+                                </select>
+
+                            </div>
+                            <div class="select-custom" id="select-custom-3">
+                                <div class="label" >Phuong</div>
+                                <div class="selected-item">selected</div>
+                                <div class="select-options">
+                                    <div class="option-item">option 1</div>
+                                    <div class="option-item">option 2</div>
+                                    <div class="option-item">option 3</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 select-box" id="select-box-3">
+                            <div class="form-group" >
+
+                                <select class="select-hidden" name="ward" id="select-3">
+                                    <option value="1">Tan thoi hiep</option>
+                                    <option value="2">Trung chanh</option>
+                                    <option value="3">Hiep thanh</option>
+                                </select>
+
+                            </div>
+                            <div class="select-custom" id="select-custom-3">
+                                <div class="label" >Phuong</div>
+                                <div class="selected-item">selected</div>
+                                <div class="select-options">
+                                    <div class="option-item">option 1</div>
+                                    <div class="option-item">option 2</div>
+                                    <div class="option-item">option 3</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 select-box" id="select-box-3">
+                            <div class="form-group" >
+
+                                <select class="select-hidden" name="ward" id="select-3">
+                                    <option value="1">Tan thoi hiep</option>
+                                    <option value="2">Trung chanh</option>
+                                    <option value="3">Hiep thanh</option>
+                                </select>
+
+                            </div>
+                            <div class="select-custom" id="select-custom-3">
+                                <div class="label" >Phuong</div>
+                                <div class="selected-item">selected</div>
+                                <div class="select-options">
+                                    <div class="option-item">option 1</div>
+                                    <div class="option-item">option 2</div>
+                                    <div class="option-item">option 3</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 select-box" id="select-box-3">
+                            <div class="form-group" >
+
+                                <select class="select-hidden" name="ward" id="select-3">
+                                    <option value="1">Tan thoi hiep</option>
+                                    <option value="2">Trung chanh</option>
+                                    <option value="3">Hiep thanh</option>
+                                </select>
+
+                            </div>
+                            <div class="select-custom" id="select-custom-3">
+                                <div class="label" >Phuong</div>
+                                <div class="selected-item">selected</div>
+                                <div class="select-options">
+                                    <div class="option-item">option 1</div>
+                                    <div class="option-item">option 2</div>
+                                    <div class="option-item">option 3</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 select-box" id="select-box-3">
+                            <div class="form-group" >
+
+                                <select class="select-hidden" name="ward" id="select-3">
+                                    <option value="1">Tan thoi hiep</option>
+                                    <option value="2">Trung chanh</option>
+                                    <option value="3">Hiep thanh</option>
+                                </select>
+
+                            </div>
+                            <div class="select-custom" id="select-custom-3">
+                                <div class="label" >Phuong</div>
+                                <div class="selected-item">selected</div>
+                                <div class="select-options">
+                                    <div class="option-item">option 1</div>
+                                    <div class="option-item">option 2</div>
+                                    <div class="option-item">option 3</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 select-box" id="select-box-3">
+                            <div class="form-group" >
+
+                                <select class="select-hidden" name="ward" id="select-3">
+                                    <option value="1">Tan thoi hiep</option>
+                                    <option value="2">Trung chanh</option>
+                                    <option value="3">Hiep thanh</option>
+                                </select>
+
+                            </div>
+                            <div class="select-custom" id="select-custom-3">
+                                <div class="label" >Phuong</div>
+                                <div class="selected-item">selected</div>
+                                <div class="select-options">
+                                    <div class="option-item">option 1</div>
+                                    <div class="option-item">option 2</div>
+                                    <div class="option-item">option 3</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
                <!-- <div class="col-md-3 select-box" id="select-box-3">
                     <div class="form-group" >
 

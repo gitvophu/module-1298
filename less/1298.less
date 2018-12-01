@@ -9,6 +9,7 @@
         padding: 0;
 
         @text-color: #fff;
+
         .col-md-4 {
           border: 1px solid #e3e3e3;
 
@@ -65,7 +66,74 @@
             }
           }
         }
+        .advance-box{
+          padding: 0;
+          display: none;
+          .wrapper{
+            position: absolute;
+            background: @text-color;
+            width: 100%;
+            .col-md-3 {
+              border: 1px solid #e3e3e3;
+
+              padding: 0;
+              .form-group {
+                margin-bottom: 0;
+
+              }
+              .label {
+                color: #000;
+                font-size: @font-size;
+              }
+              .select-hidden {
+                display: none;
+              }
+              .select-custom {
+                .selected-item::after {
+                  content: "\f0d7";
+                  font-family: 'FontAwesome';
+                  float: right;
+                }
+                @item-padding: 25px 10px;
+                .selected-item {
+                  padding: @item-padding;
+                  cursor: pointer;
+                  background: @text-color;
+                  font-size: @font-size;
+                }
+                .select-options {
+                  display: none;
+                  position: absolute;
+                  width: 100%;
+                  z-index: 10;
+                  background: #1ea69a;
+                  .option-item:hover {
+                    background: #1A9086;
+
+                  }
+                  .search-option {
+                    width: 100%;
+                    padding: 10px 10px;
+                    color: #fff;
+                    background: #1ea69a;
+                    border: 1px solid #fff;
+                  }
+                  .option-item {
+                    padding: @item-padding 0;
+                    color: @text-color;
+                    cursor: pointer;
+                    font-size: @font-size;
+                    span {
+                      display: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
+
       .col-md-3 {
         @btn-text-color:#fff;
         padding: 0;

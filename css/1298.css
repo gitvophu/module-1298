@@ -54,6 +54,66 @@
 .type-1298 .container form .col-md-9 .col-md-4 .select-custom .select-options .option-item span {
   display: none;
 }
+.type-1298 .container form .col-md-9 .advance-box {
+  padding: 0;
+  display: none;
+}
+.type-1298 .container form .col-md-9 .advance-box .wrapper {
+  position: absolute;
+  background: #fff;
+  width: 100%;
+}
+.type-1298 .container form .col-md-9 .advance-box .wrapper .col-md-3 {
+  border: 1px solid #e3e3e3;
+  padding: 0;
+}
+.type-1298 .container form .col-md-9 .advance-box .wrapper .col-md-3 .form-group {
+  margin-bottom: 0;
+}
+.type-1298 .container form .col-md-9 .advance-box .wrapper .col-md-3 .label {
+  color: #000;
+  font-size: 1.5rem;
+}
+.type-1298 .container form .col-md-9 .advance-box .wrapper .col-md-3 .select-hidden {
+  display: none;
+}
+.type-1298 .container form .col-md-9 .advance-box .wrapper .col-md-3 .select-custom .selected-item::after {
+  content: "\f0d7";
+  font-family: 'FontAwesome';
+  float: right;
+}
+.type-1298 .container form .col-md-9 .advance-box .wrapper .col-md-3 .select-custom .selected-item {
+  padding: 25px 10px;
+  cursor: pointer;
+  background: #fff;
+  font-size: 1.5rem;
+}
+.type-1298 .container form .col-md-9 .advance-box .wrapper .col-md-3 .select-custom .select-options {
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  background: #1ea69a;
+}
+.type-1298 .container form .col-md-9 .advance-box .wrapper .col-md-3 .select-custom .select-options .option-item:hover {
+  background: #1A9086;
+}
+.type-1298 .container form .col-md-9 .advance-box .wrapper .col-md-3 .select-custom .select-options .search-option {
+  width: 100%;
+  padding: 10px 10px;
+  color: #fff;
+  background: #1ea69a;
+  border: 1px solid #fff;
+}
+.type-1298 .container form .col-md-9 .advance-box .wrapper .col-md-3 .select-custom .select-options .option-item {
+  padding: 25px 10px 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.type-1298 .container form .col-md-9 .advance-box .wrapper .col-md-3 .select-custom .select-options .option-item span {
+  display: none;
+}
 .type-1298 .container form .col-md-3 {
   padding: 0;
 }

@@ -4,23 +4,25 @@ $(document).ready(function () {
     loadDataSelect2();
     loadDataSelect3();
 
+    $('.advance-btn').click(function () {
+        $('.advance-box').slideToggle();
+    });
     $('.selected-item').click(function (event) {
         resetSelectBoxes();
-        $(this).parent().parent().css('background', '#1ea69a')
+        $(this).parent().parent().css('background', '#1ea69a');
+        $(this).css({'background':'#1ea69a'})
         $(this).next('.select-options').toggle(0)
         $(this).css('color', '#fff')
         $(this).prev('.label').css('color', '#fff')
-        loadDataSelect1();
         event.stopPropagation();
     });
-    $('.option-item').click(function () {
-        $('.select-options').toggle(0);
+     $('.select-options').on('click','div.option-item',function () {
         var string = $(this).text();
         var text = string.substr(0, string.length - 1);
         var value = string.substr(string.length - 1, 1);
         $(this).parent().prev('.selected-item').text(text);
         var current_select_custom_id = $(this).parent().parent().attr('id');
-        console.log('current id: ' + current_select_custom_id);
+        console.log(text);
         switch (current_select_custom_id) {
             case 'select-custom-1':
                 $(`#select-1 option[value=${value}]`).prop('selected', true);
@@ -30,10 +32,12 @@ $(document).ready(function () {
                 $(`#select-3 option[value=${value}]`).prop('selected',true);
         }
     });
+    
     $(document).click(function () {
         $('.select-options').hide();
         $('.select-box').css('background', 'unset')
         $('.selected-item').css('color', '#000')
+        $('.selected-item').css('background', '#fff')
         $('.label').css('color', '#000')
     });
     $('.search-btn').click(function () {
@@ -81,7 +85,6 @@ function loadDataSelect1() {
     // $('#select-custom-1').find('.select-options').empty();
     $('#select-custom-1').find('.select-options').find('.option-item').each(function () {
 
-        console.log($(this));
         $(this).remove();
     });
     data.map((item, index) => {
@@ -106,7 +109,6 @@ function loadDataSelect1_OnSearch(keyword) {
     // $('#select-custom-1').find('.select-options').empty();
     $('#select-custom-1').find('.select-options').find('.option-item').each(function () {
 
-        console.log($(this));
         $(this).remove();
     });
     data.map((item, index) => {
