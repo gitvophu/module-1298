@@ -4,11 +4,22 @@ $(document).ready(function () {
     loadDataSelect2();
     loadDataSelect3();
 
+    //events
+
+
     $('.advance-btn').click(function () {
         $('.advance-box').slideToggle();
     });
+
+    //event chon thanh pho
+
+    $('#select-custom-1').on('click','.option-item',function () {
+
+    });
+
     $('.selected-item').click(function (event) {
         resetSelectBoxes();
+        $('.selected-item').css({'background':'unset'});
         $(this).parent().parent().css('background', '#1ea69a');
         $(this).css({'background':'#1ea69a'})
         $(this).next('.select-options').toggle(0)
@@ -18,19 +29,69 @@ $(document).ready(function () {
     });
      $('.select-options').on('click','div.option-item',function () {
         var string = $(this).text();
-        var text = string.substr(0, string.length - 1);
-        var value = string.substr(string.length - 1, 1);
+        var text = $(this).text();
+        var value = $(this).attr('data-content');
         $(this).parent().prev('.selected-item').text(text);
         var current_select_custom_id = $(this).parent().parent().attr('id');
-        console.log(text);
+        console.log("text: " + text + ":: value:"  + value);
         switch (current_select_custom_id) {
             case 'select-custom-1':
                 $(`#select-1 option[value=${value}]`).prop('selected', true);
+                $.ajax({
+                   url:"/ajax/province",
+                   data:{
+                       province_id:value,
+                       _token: $('#_token').val()
+                   } ,
+                    type:'post',
+                    success:function (rs) {
+                       var data = [];
+                        for (let i=0;i<rs.length; i++){
+                            let d_name = rs[i].d_name;
+                            let d_id = rs[i].d_id;
+                            data.push({
+                                value:d_id,
+                                text:d_name
+                            });
+                        }
+                        reloadDataSelect2(data);
+                    },
+                    error:function (msg) {
+                        console.log(msg);
+                    }
+                });
+                break;
             case 'select-custom-2':
                 $(`#select-2 option[value=${value}]`).prop('selected', true);
+                $.ajax({
+                    url:"/ajax/district",
+                    data:{
+                        district_id:value,
+                        _token: $('#_token').val()
+                    } ,
+                    type:'post',
+                    success:function (rs) {
+                        var data = [];
+                        for (let i=0;i<rs.length; i++){
+                            let w_name = rs[i].w_name;
+                            let w_id = rs[i].w_id;
+                            data.push({
+                                value:w_id,
+                                text:w_name
+                            });
+                        }
+                        reloadDataSelect3(data);
+                    },
+                    error:function (msg) {
+                        console.log(msg);
+                    }
+                });
+                break;
             case 'select-custom-3':
                 $(`#select-3 option[value=${value}]`).prop('selected',true);
+                break;
         }
+
     });
     
     $(document).click(function () {
@@ -89,9 +150,9 @@ function loadDataSelect1() {
     });
     data.map((item, index) => {
         $('#select-custom-1').find('.select-options')
-            .append(`<div class="option-item">${item.text}<span>${item.value}</span></div>`);
-    })
-    ;
+            .append(`<div class="option-item" data-content="${item.value}">${item.text}</div>`);
+    });
+
 }
 function loadDataSelect1_OnSearch(keyword) {
     var data = [];
@@ -113,7 +174,7 @@ function loadDataSelect1_OnSearch(keyword) {
     });
     data.map((item, index) => {
         $('#select-custom-1').find('.select-options')
-            .append(`<div class="option-item">${item.text}<span>${item.value}</span></div>`);
+            .append(`<div class="option-item" data-content="${item.value}">${item.text}</div>`);
     })
     ;
 }
@@ -132,9 +193,15 @@ function loadDataSelect2() {
     $('#select-custom-2').find('.select-options').empty();
     data.map((item, index) => {
         $('#select-custom-2').find('.select-options')
-            .append(`<div class="option-item">${item.text}<span>${item.value}</span></div>`);
-    })
-    ;
+            .append(`<div class="option-item" data-content="${item.value}">${item.text}</div>`);
+    });
+}
+function reloadDataSelect2(data){
+    $('#select-custom-2').find('.select-options').empty();
+    data.map((item, index) => {
+        $('#select-custom-2').find('.select-options')
+            .append(`<div class="option-item" data-content="${item.value}">${item.text}</div>`);
+    });
 }
 function loadDataSelect3() {
     var data = [];
@@ -151,7 +218,14 @@ function loadDataSelect3() {
     $('#select-custom-3').find('.select-options').empty();
     data.map((item, index) => {
         $('#select-custom-3').find('.select-options')
-            .append(`<div class="option-item">${item.text}<span>${item.value}</span></div>`);
+            .append(`<div class="option-item" data-content="${item.value}">${item.text}</div>`);
     })
     ;
+}
+function reloadDataSelect3(data){
+    $('#select-custom-3').find('.select-options').empty();
+    data.map((item, index) => {
+        $('#select-custom-3').find('.select-options')
+            .append(`<div class="option-item" data-content="${item.value}">${item.text}</div>`);
+    });
 }
